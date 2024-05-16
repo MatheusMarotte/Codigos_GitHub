@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import openai from 'openai';
-import openaiConfig from './openaiConfig';
 import './Ia.css';
 
 const Ia = () => {
@@ -8,7 +7,6 @@ const Ia = () => {
         { text: "Olá! Eu sou o chatbot do CRA. Como posso ajudar você hoje?", sender: "bot" }
     ]);
 
-    const apiKey = openaiConfig.openaiApiKey;
 
     const [input, setInput] = useState('');
 
@@ -22,7 +20,6 @@ const Ia = () => {
                     engine: 'text-davinci-004',
                     prompt: input,
                     maxTokens: 500,
-                    apiKey: apiKey
                 });
 
                 const botResponse = gptResponse.data.choices[0].text.trim();
@@ -50,7 +47,7 @@ const Ia = () => {
                 placeholder="Digite sua mensagem..." 
                 
             />
-            <button onClick={sendMessage}>Enviar</button>
+            <button className='enviar-ia' onClick={sendMessage}>Enviar</button>
         </div>
     );
 }

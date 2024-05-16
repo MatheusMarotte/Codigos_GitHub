@@ -1,0 +1,97 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: linear-gradient(rgb(19, 19, 92), rgb(43, 65, 114));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(178, 175, 226);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    padding: 20px;
+  }
+  
+  .header {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .header h1 {
+    margin: 10px;
+    font-size: 24px;
+  }
+  
+  .header h2 {
+    margin: 0;
+    font-size: 18px;
+    color: #666;
+  }
+  
+  .form-container {
+    display: flex;
+  }
+  
+  .login-container,
+  .register-container {
+    margin: 10px;
+    padding: 20px;
+    border: 1px solid #08275f;
+    border-radius: 5px;
+  }
+  
+  h3 {
+    margin-bottom: 20px;
+    background-color: #024ea0;
+    padding: 3px;
+    color: white;
+    text-align: center;
+    border-radius: 2px;
+    border: 1px solid gray;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  label {
+    margin-bottom: 5px;
+  }
+  
+  input {
+    margin-bottom: 15px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+  }
+  
+  button {
+    padding: 10px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  .nome {
+    background-color: #002c5c;
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    border: 2px solid black;
+  }
+  
